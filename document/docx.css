@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moul&display=swap");
+
+:root {
+    --color-primary: rgb(0, 41, 107);
+    --color-secondary: rgb(0, 63, 136);
+    --color-tertiary: rgb(0, 80, 157);
+    --color-secondary-light: rgba(0, 41, 107, 0.15);
+    --color-primary-contrast: rgb(242, 190, 0);
+    --color-shadow: rgb(0, 35, 90);
+    --color-on-hover: rgb(230, 230, 230);
+    --background-gradient: linear-gradient(180deg,
+            var(--color-primary) 0%,
+            var(--color-secondary) 35%,
+            var(--color-primary) 100%);
+    --background-hero-section-gradient: linear-gradient(90deg,
+            var(--color-primary) 0%,
+            var(--color-primary) 30%,
+            rgba(255, 255, 255, 0%) 70%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.header-1 {
+    font-size: 48px;
+    font-weight: normal;
+    color: white;
+    font-family: Moul, cursive;
+}
+
+.header-2 {
+    font-size: 32px;
+    color: white;
+    font-family: Moul, cursive;
+    font-weight: normal;
+    text-align: center;
+}
+
+.header-3 {
+    font-size: 24px;
+    color: white;
+    font-family: Moul, cursive;
+    font-weight: normal;
+    text-align: center;
+}
+
+.navigation-bar {
+    height: 95px;
+    background: var(--color-primary);
+    box-shadow: 0px 5px 3px var(--color-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.navigation-menu-right ul {
+    font-family: Battambang, cursive;
+    display: flex;
+    list-style: none;
+}
+
+.navigation-menu-left {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu-left .logo {
+    display: flex;
+}
+
+.navigation-menu-left .logo img {
+    width: 320px;
+}
+
+.navigation-menu-left .logo {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation-menu-right nav a {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.1s ease-out;
+}
+
+.navigation-menu-right a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-on-hover);
+    /* color: var(--color-on-hover); */
+}
+
+.navigation-menu-right {
+    display: flex;
+    align-items: center;
+}
+
+#docx {
+    background-color: var(--color-secondary);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-content-wrapper {
+    width: 1920px;
+    overflow: hidden;
+}
+
+.picture-docx-section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-secondary-light);
+}
+
+.picture-docx-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.all-picture-docx-information-wrapper {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.picture-docx-information h3 {
+    display: block;
+}
+
+.picture-docx-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.picture-docx-image-wrapper img {
+    border: 5px solid var(--color-secondary);
+    margin: 15% 90px;
+    width: 250px;
+}
+
+.picture-docx-section-content .header-2 {
+    display: inline-flex;
+    background-color: var(--color-secondary);
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+}
+
+.picture-docx-section-content .header-3 {
+    color: var(--color-secondary);
+}
+
+.video-docx-section {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.video-docx-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.all-video-docx-information-wrapper {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.video-docx-information h3 {
+    display: block;
+}
+
+.video-docx-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.video-docx-image-wrapper iframe {
+    border: 5px solid var(--color-secondary);
+    margin: 10% 20px;
+}
+
+.video-docx-section-content .header-2 {
+    display: inline-flex;
+    background-color: var(--color-secondary);
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+}
+
+.video-docx-section-content .header-3 {
+    color: var(--color-secondary);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+}

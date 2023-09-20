@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moul&display=swap");
+
+:root {
+  --color-primary: rgb(0, 41, 107);
+  --color-secondary: rgb(0, 63, 136);
+  --color-tertiary: rgb(0, 80, 157);
+  --color-secondary-light: rgba(0, 41, 107, 0.15);
+  --color-primary-contrast: rgb(242, 190, 0);
+  --color-shadow: rgb(0, 35, 90);
+  --color-on-hover: rgb(235, 235, 235);
+  --color-silver: #b9a903;
+  --color-text: #0379ef;
+  --color-text2: #4c0e65;
+  --color-text3: #202491;
+  --color-background2: #696969;
+  --color-background3: #e0ffff;
+
+  --color-danger: #ff7782;
+  --color-success: #0bca91a7;
+  --color-warning: #ffbb55;
+  --color-white: #ffff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1ed;
+  --background-gradient: linear-gradient(180deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 35%,
+      var(--color-primary) 100%);
+  --background-hero-section-gradient: linear-gradient(90deg,
+      var(--color-primary) 0%,
+      var(--color-primary) 30%,
+      rgba(255, 255, 255, 0%) 70%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.header-1 {
+  font-size: 48px;
+  font-weight: normal;
+  color: white;
+  font-family: Moul, cursive;
+  text-align: center;
+  top: 0;
+  margin-top: 2%;
+}
+
+.header-2 {
+  font-size: 32px;
+  color: white;
+  font-family: Moul, cursive;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header-3 {
+  font-size: 24px;
+  color: white;
+  font-family: Moul, cursive;
+  font-weight: normal;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.navigation-bar {
+  height: 110px;
+  background: var(--color-primary);
+  box-shadow: 0px 5px 3px var(--color-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 5;
+  top: 0px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.navigation-menu-right ul {
+  font-family: Battambang, cursive;
+  display: flex;
+  list-style: none;
+}
+
+.navigation-menu-left {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu-left .logo {
+  display: flex;
+}
+
+.navigation-menu-left .logo img {
+  width: 360px;
+}
+
+.navigation-menu-left .logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation-menu-right nav a {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation-menu-right a:hover {
+  background-color: var(--color-secondary);
+  /* color: var(--color-on-hover); */
+}
+
+.home {
+  background: var(--color-secondary);
+}
+
+.navigation-menu-right {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: var(--color-primary);
+}
+
+.services-container {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 1550px;
+  overflow: hidden;
+  background-color: #0379ef;
+}
+
+.paragraph {
+  text-align: left;
+  font-size: 24px;
+  font-family: "Battambang", cursive;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.founder-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-info-light);
+}
+
+.services-container .services-box {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #0379ef;
+}
+
+.founder-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  background-color: var(--color-info-light);
+}
+
+.all-founder-information-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.founder-section-content .header-2 {
+  display: inline-flex;
+  background-color: var(--color-secondary);
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/*input desing*/
+.founder-section1 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+form {
+  max-width: 90rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 5%;
+}
+
+form .inpit-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form .inpit-box input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: black;
+  background: var(--color-background3);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+form .inpit-box input {
+  width: 49%;
+}
+
+form textarea {
+  resize: none;
+}
+
+form .btn {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 2rem;
+  background: var(--color-info-light);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--color-silver);
+  font-size: 20px;
+  color: black;
+  letter-spacing: .1rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+
+
+.header-table span {
+  display: block;
+  background-color: var(--color-secondary);
+  padding: 5 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 32px;
+  font-family: Moul, cursive;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 10px 15px;
+}
+
+/*Main*/
+.background-table .header-2 {
+  display: inline-flex;
+  background-color: var(--color-secondary);
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.background-table {
+  margin-top: 5%;
+
+}
+
+.background-table .insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.background-table .insights>div:hover {
+  box-shadow: none;
+}
+
+.background-table .insights>div span {
+  float: left;
+  background: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--color-white);
+  margin-top: 20px;
+  font-size: 30px;
+  margin-right: 1rem;
+  margin-left: 20%;
+}
+
+.background-table .insights>div.expenses span {
+  background: var(--color-danger);
+}
+
+.background-table .insights>div.income span {
+  background: var(--color-success);
+}
+
+.background-table .left {
+  font-size: 10px;
+  left: 0;
+  font-family: "Battambang", cursive;
+  margin-top: 30px;
+}
+
+.background-table .dolar {
+  color: var(--color-text);
+}
+
+.icon i {
+  float: left;
+  background: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--color-white);
+  margin-top: 20px;
+  font-size: 30px;
+  margin-right: 1rem;
+  margin-left: 20%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+}

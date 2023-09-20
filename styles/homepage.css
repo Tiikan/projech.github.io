@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moul&display=swap");
+
+:root {
+  --color-primary: rgb(0, 41, 107);
+  --color-secondary: rgb(0, 63, 136);
+  --color-tertiary: rgb(0, 80, 157);
+  --color-secondary-light: rgba(0, 41, 107, 0.15);
+  --color-primary-contrast: rgb(242, 190, 0);
+  --color-shadow: rgb(0, 35, 90);
+  --color-on-hover: rgb(230, 230, 230);
+  --background-gradient: linear-gradient(
+    180deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 35%,
+    var(--color-primary) 100%
+  );
+  --background-hero-section-gradient: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-primary) 30%,
+    rgba(255, 255, 255, 0%) 70%
+  );
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.header-1 {
+  font-size: 48px;
+  font-weight: normal;
+  color: white;
+  font-family: Moul, cursive;
+}
+
+.header-2 {
+  font-size: 32px;
+  color: white;
+  font-family: Moul, cursive;
+  font-weight: normal;
+  text-align: center;
+}
+
+.header-3 {
+  font-size: 24px;
+  color: white;
+  font-family: Moul, cursive;
+  font-weight: normal;
+  text-align: center;
+}
+
+.navigation-bar {
+  height: 95px;
+  background: var(--color-primary);
+  box-shadow: 0px 5px 3px var(--color-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 5;
+  top: 0px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.navigation-menu-right ul {
+  font-family: Battambang, cursive;
+  display: flex;
+  list-style: none;
+}
+
+.navigation-menu-left {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu-left .logo {
+  display: flex;
+}
+
+.navigation-menu-left .logo img {
+  width: 320px;
+}
+
+.navigation-menu-left .logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation-menu-right nav a {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.1s ease-out;
+}
+
+.navigation-menu-right a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-on-hover);
+  /* color: var(--color-on-hover); */
+}
+
+.navigation-menu-right {
+  display: flex;
+  align-items: center;
+}
+
+#homepage {
+  background-color: var(--color-secondary);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content-wrapper {
+  width: 1920px;
+  overflow: hidden;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1920 / 720;
+  min-height: 480px;
+  height: auto;
+  width: 100%;
+}
+
+.hero-section-image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: var(--background-hero-section-gradient);
+}
+
+.hero-section-image-wrapper img {
+  position: relative;
+  width: 100%;
+  min-width: 1280px;
+  transform: scaleX(-1.5) scaleY(1.5);
+  bottom: 55%;
+  right: 10%;
+  z-index: -1;
+}
+
+.hero-section-text {
+  display: block;
+  position: absolute;
+  color: white;
+  margin: 5%;
+}
+
+.paragraph {
+  text-align: left;
+  font-size: 24px;
+  font-family: "Battambang", cursive;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-secondary-light);
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4%;
+}
+
+.all-founder-information-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.founder-information h3 {
+  display: block;
+}
+
+.founder-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.founder-image-wrapper img {
+  padding: 4px;
+  border: 10px solid var(--color-primary);
+  margin: 15% 90px;
+  width: 360px;
+  border-radius: 50%;
+}
+
+.section-content .header-2 {
+  display: inline-flex;
+  background-color: var(--color-secondary);
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+}
+
+.section-content .header-3 {
+  color: var(--color-secondary);
+}
+
+.fund.section {
+  background-color: aliceblue;
+}
+
+.fund.section-content .icon {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.fund.section-content i {
+  margin: 30px;
+}
+
+.all-fund-information-wrapper {
+  width: 90%;
+  margin: 4%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.annual-donation .paragraph {
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.copyright-text {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+}
